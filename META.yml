@@ -1,0 +1,17 @@
+--- #YAML:1.0
+name:                DBIx-MyParseX
+version:             0.05
+abstract:            Extensions to DBIx::MyParse
+license:             ~
+author:              
+    - Christopher Brown <ctbrown@cpan.org>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    DBIx::MyParse:                 0
+    DBIx::MyParse::Item:           0
+    DBIx::MyParse::Query:          0
+    Test::More:                    0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
