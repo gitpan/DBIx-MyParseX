@@ -1,19 +1,20 @@
-use strict;
-use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'DBIx::MyParseX',
-    AUTHOR              => 'Christopher Brown <ctbrown@cpan.org>',
-    VERSION_FROM        => 'lib/DBIx/MyParseX.pm',
-    ABSTRACT_FROM       => 'lib/DBIx/MyParseX.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More'            => 0 ,
-        'DBIx::MyParse'          => 0 ,
-        'DBIx::MyParse::Query'   => 0 ,
-        'DBIx::MyParse::Item'    => 0 ,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'DBIx-MyParseX-*' },
-);
+    name     'DBIx-MyParseX';
+    all_from 'lib/DBIx/MyParseX.pm';
+    author   'Christopher Brown <ctbrown@cpan.org>';
+    license 'gpl';
+
+
+    build_requires 'Test::More';
+    # requires 'Moose' => 0.00;
+    requires 'DBIx::MyParse'        => 0;
+    requires 'DBIx::MyParse::Query' => 0;
+    requires 'DBIx::MyParse::Item'  => 0;
+    requires 'List::MoreUtils'      => 0.22;
+    requires 'self'                 => 0.15;
+
+    auto_install;
+
+    WriteAll;
+

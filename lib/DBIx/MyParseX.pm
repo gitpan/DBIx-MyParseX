@@ -1,5 +1,5 @@
 package DBIx::MyParseX;
-    our $VERSION = '0.05';
+    our $VERSION = '0.06';
 
 use 5.008008;
 use strict;
@@ -14,7 +14,6 @@ use base 'DBIx::MyParse';
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
@@ -26,32 +25,39 @@ DBIx::MyParseX - Extensions to DBIx::MyParse
 
 =head1 DESCRIPTION
 
-This extension provides exteneded functionality for the DBIx::MyParse 
-module.  Calls DBIx::MyParseX::Query and DBIx::MyParseX::Item
+This extension provides exteneded functionality to Philip Stoev's
+very useful DBIx::MyParse module.  
 
-=head2 EXPORT
+See L<DBIx::MyParseX::Query> and L<DBIx::MyParseX::Item> for 
+documentation on these extensions.
+
+
+=head1 EXPORT
 
 None by default.
 
 
-
 =head1 SEE ALSO
 
-DBIx::MyParse
+L<DBIx::MyParse>
 
-http://www.opendatagroup.com
+L<DBIx::MyParseX::Query> extensions to L<DBIx::MyParse::Query>
+
+L<DBIx::MyParseX::Item> extensions to L<DBIx::MyParse::Item>
+
+L<http://www.opendatagroup.com>
+
 
 =head1 AUTHOR
 
 Christopher Brown, E<lt>ctbrown@cpan.org<gt>
 
-=head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2008 by Open Data Group 
+=head1 COPYRIGHT & LICENSE
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.8 or,
-at your option, any later version of Perl 5 you may have available.
+Copyright 2008 by Open Data Group 
 
+This library is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public Licence.
 
 =cut
